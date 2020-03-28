@@ -1,3 +1,6 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/professorjosedeassis/infoX)
+![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
+![Twitter Follow](https://img.shields.io/twitter/follow/joseassis?label=Seguir&style=social)
 # infoX
 ## Curso de Java com MySQL - Sistema para controle de Ordem de Serviços
 [![java mysql](http://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](http://www.youtube.com/watch?v=eA4WjjkzK3c "Curso de java com mysql")
