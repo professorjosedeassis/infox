@@ -1,4 +1,3 @@
-![GitHub](https://img.shields.io/github/license/professorjosedeassis/infox.svg)
 # infoX
 ## Curso de Java com MySQL - Sistema para controle de Ordem de Serviços
 [![java mysql](http://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](http://www.youtube.com/watch?v=eA4WjjkzK3c "Curso de java com mysql")
