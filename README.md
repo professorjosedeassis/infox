@@ -18,14 +18,12 @@ Professor José de Assis
 * MySQL
 ## Licença
 Este projeto está licenciado sob a licença MIT - Consulte o arquivo LICENSE.md para detalhes.
-## Links indicados
-### OpenJDK 8 (LTS)
-[openJDK 8](https://adoptopenjdk.net/)
-### NetBeans IDE 8.2
-[NetBeans 8.2](https://netbeans-ide.informer.com/8.2/)
+## Ferramentas
+[openJDK 8 (LTS)](https://adoptopenjdk.net/)
+
+[NetBeans IDE 8.2](https://netbeans-ide.informer.com/8.2/)
 
 ## Bibliotecas
-
 [atxy2k](http://atxy2k.github.io/RestrictedTextField/)
 
 [driver MySQL](https://dev.mysql.com/downloads/connector/j/)
