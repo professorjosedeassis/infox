@@ -17,7 +17,7 @@ create table tbusuarios(
     perfil varchar(20) not null
 );
 
--- usuário restrito (uso interno)
+-- login (usuário: admin | senha: admin)
 insert into tbusuarios(iduser,usuario,login,senha,perfil)
 values(1,'Administrador','admin',md5('admin'),'admin');
 
