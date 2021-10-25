@@ -23,6 +23,8 @@ Este projeto está licenciado sob a licença MIT - Consulte o arquivo LICENSE.md
 
 [NetBeans IDE 8.2](https://netbeans-ide.informer.com/8.2/)
 
+[Inno Setup](https://jrsoftware.org/isinfo.php)
+
 ## Bibliotecas
 [atxy2k](http://atxy2k.github.io/RestrictedTextField/)
 
