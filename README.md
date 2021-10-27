@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
 # Java MySQL - Sistema para gestão de serviços
-Aprenda Java e MySQL de forma prática e descontraída desenvolvendo passo a passo do zero um sistema para controle de Ordem de Serviços. Este tutorial fornece uma base sólida ao desenolvimento de um sistema desktop usando a linguagem Java e o banco de dados MySQL.
+Aprenda Java e MySQL de forma prática e descontraída desenvolvendo passo a passo do zero um sistema para controle de Ordem de Serviços. Este tutorial fornece uma base sólida ao desenvolvimento de um sistema desktop usando a linguagem Java e o banco de dados MySQL.
 ## Apresentação do projeto
 
 [![Java MySQL](https://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](https://youtu.be/eA4WjjkzK3c "Apresentação do projeto")
