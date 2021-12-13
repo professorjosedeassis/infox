@@ -1,14 +1,17 @@
 /*drop database dbinfox;
 create database dbinfox
 default character set utf8
-default collate utf8_general_ci;*/
-use dbinfox;
+default collate utf8_general_ci;
+use dbinfox;*/
+
+/*drop table tbusuarios;*/
 create table tbusuarios(
-iduser			int primary key,
-usuario			varchar(50)	not null,
-fone			varchar(15),
-login			varchar(15) not null unique,	
-senha			varchar(15) not null
+iduser					int not null,
+usuario					varchar(50)	not null,
+fone					varchar(15),
+login					varchar(15) not null unique,	
+senha					varchar(15) not null,
+constraint pk_iduser	primary key (iduser)
 )default charset = utf8;
 
 describe tbusuarios;
@@ -20,18 +23,19 @@ insert into tbusuarios ( iduser, usuario, fone, login, senha )
 insert into tbusuarios ( iduser, usuario, fone, login, senha )
 		values		( 3, 'Bill Gates', '9999-9999', 'bill', '123456');
 
-update tbusuarios set fone = '8888-8888' where iduser = 2;
-delete from tbusuarios where iduser = 3; 
+/*update tbusuarios set fone = '8888-8888' where iduser = 2;
+delete from tbusuarios where iduser = 3; */
 
 /*drop table tbclientes;*/
 describe tbclientes;
 select * from tbclientes;
 create table tbclientes(
-idcli			int primary key auto_increment unique,
-nomecli			varchar(50)	not null,
-endcli			varchar(100),
-fonecli			varchar(50)	not null,
-emailcli		varchar(50)
+idcli					int not null auto_increment,
+nomecli					varchar(50)	not null,
+endcli					varchar(100),
+fonecli					varchar(50)	not null,
+emailcli				varchar(50),
+constraint pk_idcli		primary key (idcli)
 )default charset = utf8;
 
 insert into tbclientes (nomecli,endcli,fonecli,emailcli)
@@ -41,21 +45,19 @@ drop table tbos;
 describe tbos;
 select * from tbos;
 create table tbos(
-os				int primary key auto_increment,
-data_os			timestamp default current_timestamp,
-equipamento		varchar(150) not null,
-defeito			varchar(150) not null,
-servico			varchar(150),
-tecnico			varchar(30),
-valor			decimal(10,2)
+os						int primary key auto_increment,
+data_os					timestamp default current_timestamp,
+equipamento				varchar(150) not null,
+defeito					varchar(150) not null,
+servico					varchar(150),
+tecnico					varchar(30),
+valor					decimal(10,2),
+idcli					int not null,
+constraint fk_OsCli		foreign key (idcli) references tbclientes (idcli)
 )default charset = utf8;
 
-alter table tbos add fk_idcli int not null;
-alter table tbos add foreign key (fk_idcli) references tbclientes (idcli);
-
-
-insert into tbos (equipamento,defeito,servico,tecnico,valor, fk_idcli)
-values			('Notebook','não liga','troca da fonte','linus',87.50, 1);
+insert into tbos (equipamento,defeito,servico,tecnico,valor)
+values			('Notebook','não liga','troca da fonte','linus',87.50);
 
 select
 O.os, equipamento, defeito, servico, valor,
