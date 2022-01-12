@@ -1,8 +1,9 @@
 /*drop database dbinfox;
 create database dbinfox
 default character set utf8
-default collate utf8_general_ci;
-use dbinfox;*/
+default collate utf8_general_ci;*/
+
+use dbinfox;
 
 /*drop table tbusuarios;*/
 create table tbusuarios(
@@ -26,7 +27,7 @@ insert into tbusuarios ( iduser, usuario, fone, login, senha )
 /*update tbusuarios set fone = '8888-8888' where iduser = 2;
 delete from tbusuarios where iduser = 3; */
 
-//////////////////////////////////////////////////////////////////////////////////////
+--//////////////////////////////////////////////////////////////////////////////////////
 /*drop table tbclientes;*/
 select * from tbclientes;
 create table tbclientes(
@@ -44,14 +45,14 @@ insert into tbclientes (nomecli,endcli,fonecli,emailcli)
 select idcli,nomecli,fonecli from tbclientes where nomecli like 'j%';
 
 select idcli as Id, nomecli as Nome, fonecli as Fone from tbclientes where nomecli like 'j%';
-//////////////////////////////////////////////////////////////////////////////////////////////
+--//////////////////////////////////////////////////////////////////////////////////////////////
 --drop table tbos
 select * from tbos;
 create table tbos(
 os						int primary key identity(1,1),
 data_os					DATETIME NOT NULL	DEFAULT CURRENT_TIMESTAMP,
-tipo					varchar(15) not null,
-situacao				varchar(15) not null,
+tipo					varchar(30) not null,
+situacao				varchar(30) not null,
 equipamento				varchar(150) not null,
 defeito					varchar(150) not null,
 servico					varchar(150),
@@ -68,14 +69,29 @@ constraint fk_OsCli		foreign key (idcli) references tbclientes (idcli)
 --ALTER TABLE tbos MODIFY tipo VARCHAR NOT NULL;
 /////////////////////////////////////////////////////////////////////////////////////////////////
 insert into tbos (tipo,situacao,equipamento,defeito,servico,tecnico,valor,idcli)
-values			('','','Notebook','não liga','troca da fonte','linus',87.50,1);
-/////////////////////////////////////////////////////////////////////////////////////////////////
- UPDATE tbos 
- SET tipo = 'Odrem de Serviço', situacao = 'Aprovado'
- WHERE os = 6;
+values			('Odrem de Serviço','Aprovado','Notebook','não liga','troca da fonte','linus',87.50,1);
 
+insert into tbos (tipo,situacao,equipamento,defeito,servico,tecnico,valor,idcli)
+values			('Orçamento','Reprovado','Notebook','não liga','troca da fonte','linus',97.50,3);
+
+insert into tbos (tipo, situacao, equipamento, defeito, servico, idcli)
+values			('Orçamento', 'Aguardando Aprovação', 'Desktop', 'Não liga', 'Análise', 4);
+
+insert into tbos (tipo, situacao, equipamento, defeito, servico, idcli)
+values			('Odrem de Serviço', 'Aguardando Visita Técnica', 'Notebook', 'Não liga', 'Análise', 6);
+
+insert into tbos (tipo, situacao, equipamento, defeito, servico, idcli)
+values			('Orçamento', 'Aguardando Agendamento', 'Tablet', 'Não liga', 'Análise', 7);
+
+insert into tbos (tipo, situacao, equipamento, defeito, servico, idcli)
+values			('Odrem de Serviço', 'Abandonado pelo Cliente', 'Notebook', 'Não liga', 'Análise', 8);
+/////////////////////////////////////////////////////////////////////////////////////////////////
+UPDATE tbos 
+SET tipo = 'Odrem de Serviço'
+WHERE os = 4
+ --, situacao = 'Aprovado'
 select
-O.os, equipamento, defeito, servico, valor,
+O.os, data_os, tipo, equipamento, defeito, servico, valor,
 C.nomecli, fonecli
 from tbos as O
 inner join tbclientes as C
