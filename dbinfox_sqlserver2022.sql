@@ -85,22 +85,38 @@ values			('Orçamento', 'Aguardando Agendamento', 'Tablet', 'Não liga', 'Análi
 
 insert into tbos (tipo, situacao, equipamento, defeito, servico, idcli)
 values			('Odrem de Serviço', 'Abandonado pelo Cliente', 'Notebook', 'Não liga', 'Análise', 8);
-/////////////////////////////////////////////////////////////////////////////////////////////////
+---///////////////////////////////////////////////////////////////////////////////////////////////
 UPDATE tbos 
-SET tipo = 'Odrem de Serviço'
-WHERE os = 4
- --, situacao = 'Aprovado'
+SET tipo = 'Orçamento', tecnico = 'João', valor = 40.90
+WHERE os = 3
+---///////////////////////////////////////////////////////////////////////////////////////////////
 select
 O.os, data_os, tipo, equipamento, defeito, servico, valor,
 C.nomecli, fonecli
 from tbos as O
 inner join tbclientes as C
 on (O.idcli = c.idcli);
-
-
-
-
-
+---///////////////////////////////////////////////////////////////////////////////////////////////
+select * from tbos;
+select os, 
+	 FORMAT(data_os, 'dd/MM/yyyy - hh:mm', 'pt-BR'),
+	tipo,
+	situacao,
+	equipamento,
+	defeito,
+	servico,
+	tecnico,
+	valor,
+	idcli
+from tbos
+WHERE os = 3
+/*	tipo, 
+	equipamento, 
+	defeito, 
+	servico, 
+	valor,
+--SELECT FORMAT(getdate(), 'dd/MM/yyyy - hh:mm', 'pt-BR' )
+--SELECT FORMAT(data, 'dd-mm-yyyy hh:mm:ss')
 
 
 
