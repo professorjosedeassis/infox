@@ -10,7 +10,7 @@ Professor José de Assis
 ![YouTube Video Views](https://img.shields.io/youtube/views/eA4WjjkzK3c?style=social)
 
 ### Playlist
-[Iniciar projeto](https://www.youtube.com/playlist?list=PLbEOwbQR9lqxsTusvu8wfkUECrmcV81MU)
+[Iniciar tutorial](https://www.youtube.com/playlist?list=PLbEOwbQR9lqxsTusvu8wfkUECrmcV81MU)
 ### Bibliotecas:
 [atxy2k](http://atxy2k.github.io/RestrictedTextField/)
 
