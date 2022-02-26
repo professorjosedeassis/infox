@@ -5,8 +5,7 @@ Desenvolva **passo a passo** do zero um sistema para gestão de ordem de serviç
 Professor José de Assis
 ### Apresentação do projeto
 
-[![Java MySQL](https://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](https://youtu.be/eA4WjjkzK3c "Apresentação do projeto")
-
+[![Java MySQL](https://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](https://youtu.be/eA4WjjkzK3c "Assistir no YouTube")
 
 ![YouTube Video Views](https://img.shields.io/youtube/views/eA4WjjkzK3c?style=social)
 
