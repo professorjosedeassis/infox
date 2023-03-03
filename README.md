@@ -11,13 +11,13 @@ Professor José de Assis
 
 ### Playlist
 [Iniciar tutorial](https://www.youtube.com/playlist?list=PLbEOwbQR9lqxsTusvu8wfkUECrmcV81MU)
-### Bibliotecas:
+### Bibliotecas
 [atxy2k](http://atxy2k.github.io/RestrictedTextField/)
 
 [driver MySQL](https://dev.mysql.com/downloads/connector/j/)
 
 [rs2xml](https://sourceforge.net/projects/finalangelsanddemons/files/rs2xml.jar/download)
-### Ferramentas:
+### Ferramentas
 [openJDK 8 (LTS)](https://adoptopenjdk.net/)
 
 [NetBeans IDE 8.2](https://netbeans-ide.informer.com/8.2/)
