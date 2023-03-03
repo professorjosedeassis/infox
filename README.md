@@ -25,6 +25,10 @@ Professor José de Assis
 [iReport-5.6.0](https://sourceforge.net/projects/ireport/)
 
 [Inno Setup](https://jrsoftware.org/isinfo.php)
+
+### Slides
+[JDBC](https://professorjosedeassis.github.io/infox/)
+
 ## Instalação da versão de demontração (projeto modelo)
 Essas instruções fornecerão uma cópia do projeto instalado e funcionando em sua máquina local (Windows) para fins de desenvolvimento e testes. Assista a playlist para aprender a instalar este projeto em outros sistemas, modificar este projeto modelo, migrar o banco de dados para um servidor Linux e implantar em um sistema ativo.
 ### Pré requisitos:
