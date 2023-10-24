@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
-# Java MySQL - Sistema para gestão de serviços
-Desenvolva **passo a passo** do zero um sistema para gestão de ordem de serviços (**Sistema OS**) de uma assistência técnica de computadores e periféricos. Este projeto é muito popular e serve como modelo para outros projetos de gestão de serviços, como por exemplo assistências técnicas de smartphones, eletrodomésticos, oficinas mecânicas etc. Este tutorial fornece uma base sólida a todos que desejam aprender a desenvolver um sistema desktop usando a linguagem Java e o banco de dados MySQL.
+# Tutorial Java MySQL - Sistema para gestão de serviços
+Desenvolva **passo a passo** do zero um sistema para gestão de ordem de serviços (**Sistema OS**) de uma assistência técnica de computadores e periféricos. Este projeto também serve como modelo para outros projetos de gestão de serviços, como por exemplo assistências técnicas de smartphones, eletrodomésticos, oficinas mecânicas etc. Este tutorial fornece uma base sólida a todos que desejam aprender a desenvolver um sistema desktop usando a linguagem Java e o banco de dados MySQL.
 ### Autor
 Professor José de Assis
 ### Apresentação do projeto
