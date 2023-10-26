@@ -1,6 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
 
-# ☕ Java MySQL - Sistema para gestão de serviços (Sistema OS)
+# ☕ Java MySQL - Sistema OS
 Sistema desktop (Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
 
 ![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela5.png)
