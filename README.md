@@ -3,7 +3,7 @@
 # ☕ Java MySQL - Sistema OS
 Sistema desktop (Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
 
-![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela5.png)
+![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/sistemaOS.png)
 ## Autor
 Professor José de Assis
 ## Instruções para instalação e uso do aplicativo
