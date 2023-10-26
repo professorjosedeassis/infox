@@ -1,8 +1,56 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
-# Tutorial Java MySQL - Sistema para gestão de serviços
-Desenvolva **passo a passo** do zero um sistema para gestão de ordem de serviços (**Sistema OS**) de uma assistência técnica de computadores e periféricos. Este projeto também serve como modelo para outros projetos de gestão de serviços, como por exemplo assistências técnicas de smartphones, eletrodomésticos, oficinas mecânicas etc. Este tutorial fornece uma base sólida a todos que desejam aprender a desenvolver um sistema desktop (Windows, Linux ou MAC) usando a linguagem Java e o banco de dados MySQL.
-### Autor
+
+# ☕ Java MySQL - Sistema OS
+Sistema desktop (Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
+
+![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela5.png)
+## Autor
 Professor José de Assis
+## Instruções para instalação e uso do aplicativo
+### Pré requisitos
+1) Ter o Java **versão 8** instalado (só funciona corretamente nesta versão do Java). 
+
+[download Java 8)](https://www.java.com/pt-BR/)
+
+2) Ter um banco de dados local baseado no **MySQL 8** ou MariaDB compatível, no exemplo usei o XAMPP que pode ser obtido no link indicado.
+
+[download xampp](https://www.apachefriends.org/)
+
+### Instalação do banco
+1) Iniciar os serviços Apache e MySQL no XAMPP, conforme indicado na imagem.
+
+![xampp start](https://github.com/professorjosedeassis/carometro/blob/main/assets/xampp1.png)
+
+2) No navegador de internet digite: **localhost/dashboard** e selecione no menu: **phpMyAdmin** conforme indicado na imagem.
+
+![phpmyadmin](https://github.com/professorjosedeassis/carometro/blob/main/assets/xampp2.png)
+
+3) Crie um novo banco de dados de nome **dbinfox** (sem usar acentuação) conforme indicado na imagem.
+
+![dbinfox](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela1.png)
+
+4) Na aba SQL, copie e cole o código abaixo e execute. (Passos 1,2 e 3 indicados na imagem)
+
+`create table tbusuarios(iduser int primary key,usuario varchar(15) not null,fone varchar(15),login varchar(15) not null unique,senha varchar(250) not null,perfil varchar(20) not null);
+insert into tbusuarios(iduser,usuario,login,senha,perfil) values(1,'Administrador','admin',md5('admin'),'admin');
+create table tbclientes(idcli int primary key auto_increment,nomecli varchar(50) not null,endcli varchar(100),fonecli varchar(15) not null,emailcli varchar(50) unique);
+create table tbos(os int primary key auto_increment,data_os timestamp default current_timestamp,tipo varchar(15) not null,situacao varchar(20) not null,equipamento varchar(150) not null,defeito varchar(150),servico varchar(150),tecnico varchar(30),valor decimal(10,2),idcli int not null,foreign key(idcli) references tbclientes(idcli));
+`
+
+![alunos](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela2.png)
+
+### Instalação do aplicativo
+1) Em Releases faça o download do arquivo **dist.zip**
+2) Descompactar e executar o arquivo **prjinfoX.jar** verifique no rodapé o ícone que representa o banco de dados conectado. Se estiver com erro (conforme indicado na figura) verifique o XAMPP e revise novamente os passos 1 a 4 da instalação do banco.
+
+![app](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela3.png)
+
+3) Se tudo estiver OK você pode iniciar fazendo o login com o usuário admin e a senha admin (esta senha pode ser alterada posteriormente). Ao logar o sistema direciona para tela principal onde novos usuários, clientes e OS podem ser cadastradas. O sistema permite também a emissão de relatórios.
+
+![aplicativo](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela4.png) 
+
+## Tutorial passo a passo para desenvolver este projeto do "zero"
+Desenvolva **passo a passo** do zero um sistema para gestão de ordem de serviços (**Sistema OS**) de uma assistência técnica de computadores e periféricos. Este projeto também serve como modelo para outros projetos de gestão de serviços, como por exemplo assistências técnicas de smartphones, eletrodomésticos, oficinas mecânicas etc. Este tutorial fornece uma base sólida a todos que desejam aprender a desenvolver um sistema desktop (Windows, Linux ou MAC) usando a linguagem Java e o banco de dados MySQL.
 ### Apresentação do projeto
 
 [![Java MySQL](https://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](https://youtu.be/eA4WjjkzK3c "Assistir no YouTube")
