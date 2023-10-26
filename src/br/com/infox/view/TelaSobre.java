@@ -76,16 +76,16 @@ public class TelaSobre extends javax.swing.JFrame {
         setTitle("Sobre");
         setResizable(false);
 
-        jLabel1.setText("X - Sistema para gestão de serviços - Ver 1.1");
+        jLabel1.setText("Sistema para gestão de serviços - Ver 1.3");
 
-        jLabel2.setText("Autor:  Professor José de Assis");
+        jLabel2.setText("@author Professor José de Assis");
 
         jLabel3.setText("Sob a licença MIT");
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/mit.png"))); // NOI18N
 
         lblLink.setForeground(java.awt.SystemColor.textHighlight);
-        lblLink.setText("github.com/professorjosedeassis/infox");
+        lblLink.setText("josedeassis.com.br");
         lblLink.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblLink.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -105,7 +105,7 @@ public class TelaSobre extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(jLabel2)
                             .addComponent(lblLink))
-                        .addContainerGap(72, Short.MAX_VALUE))
+                        .addContainerGap(88, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -132,12 +132,14 @@ public class TelaSobre extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
+        jLabel2.getAccessibleContext().setAccessibleName("@author:  Professor José de Assis");
+
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblLinkMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLinkMouseClicked
-        link("https://github.com/professorjosedeassis/infox");
+        link("https://joseassis.com.br");
     }//GEN-LAST:event_lblLinkMouseClicked
 
     /**
