@@ -10,7 +10,7 @@ Professor José de Assis
 ### Pré requisitos
 1) Ter o Java **versão 8** instalado (só funciona corretamente nesta versão do Java). 
 
-[download Java 8)](https://www.java.com/pt-BR/)
+[download Java 8](https://www.java.com/pt-BR/)
 
 2) Ter um banco de dados local baseado no **MySQL 8** ou MariaDB compatível, no exemplo usei o XAMPP que pode ser obtido no link indicado.
 
@@ -25,7 +25,7 @@ Professor José de Assis
 
 ![phpmyadmin](https://github.com/professorjosedeassis/carometro/blob/main/assets/xampp2.png)
 
-3) Crie um novo banco de dados de nome **dbinfox** (sem usar acentuação) conforme indicado na imagem.
+3) Crie um novo banco de dados de nome **dbinfox** conforme indicado na imagem.
 
 ![dbinfox](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela1.png)
 
