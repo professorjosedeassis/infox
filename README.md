@@ -1,7 +1,7 @@
 ![GitHub](https://img.shields.io/github/license/professorjosedeassis/infoX)
 
 # ☕ Java MySQL - Sistema OS
-Sistema desktop (Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
+Sistema OS é um sistema desktop(Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
 
 ![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/sistemaOS.png)
 ## Autor
@@ -50,12 +50,15 @@ create table tbos(os int primary key auto_increment,data_os timestamp default cu
 ![aplicativo](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela4.png) 
 
 ## Tutorial passo a passo para desenvolver este projeto do "zero"
-Desenvolva **passo a passo** do zero um sistema para gestão de ordem de serviços (**Sistema OS**) de uma assistência técnica de computadores e periféricos. Este projeto também serve como modelo para outros projetos de gestão de serviços, como por exemplo assistências técnicas de smartphones, eletrodomésticos, oficinas mecânicas etc. Este tutorial fornece uma base sólida a todos que desejam aprender a desenvolver um sistema desktop (Windows, Linux ou MAC) usando a linguagem Java e o banco de dados MySQL.
-### Apresentação do projeto
-
-[![Java MySQL](https://img.youtube.com/vi/eA4WjjkzK3c/0.jpg)](https://youtu.be/eA4WjjkzK3c "Assistir no YouTube")
-
-![YouTube Video Views](https://img.shields.io/youtube/views/eA4WjjkzK3c?style=social)
+Tecnologias que são abordadas neste tutorial:
+- Criação de banco de dados e tabelas no MySQL
+- CRUD (Create Read Update e Delete)
+- IDE Netbeans
+- Java SE
+- Window Builder
+- JDBC (Java Database Connectivity)
+- Validação de dados
+- Uso do framework iReport para gerar relatórios
 
 ### Iniciar tutorial:
 [Playlist](https://www.youtube.com/playlist?list=PLbEOwbQR9lqxsTusvu8wfkUECrmcV81MU)
