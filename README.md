@@ -45,7 +45,7 @@ create table tbos(os int primary key auto_increment,data_os timestamp default cu
 
 ![app](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela3.png)
 
-3) Se tudo estiver OK você pode iniciar fazendo o login com o usuário **admin** e a senha **admin** (esta senha pode ser alterada posteriormente). Ao logar o sistema direciona para tela principal onde novos usuários, clientes e OS podem ser cadastradas. O sistema permite também a emissão de relatórios.
+3) Se tudo estiver OK você pode iniciar fazendo o login com o usuário **admin** e a senha **admin** (esta senha pode ser alterada posteriormente). Ao logar o sistema direciona para tela principal onde podem ser cadastrados novos usuários, clientes e OS. O sistema permite também a emissão de relatórios.
 
 ![aplicativo](https://github.com/professorjosedeassis/infox/blob/master/assets/infoxtela4.png) 
 
