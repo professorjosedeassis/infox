@@ -55,7 +55,6 @@ Tecnologias que são abordadas neste tutorial:
 - CRUD (Create Read Update e Delete)
 - IDE Netbeans
 - Java SE
-- Window Builder
 - JDBC (Java Database Connectivity)
 - Validação de dados
 - Uso do framework iReport para gerar relatórios
