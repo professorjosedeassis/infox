@@ -4,6 +4,10 @@
 Sistema OS é um sistema desktop(Windows, Linux ou MAC) para gestão de ordem de serviços de uma assistência técnica de computadores, notebooks e periféricos.
 
 ![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/sistemaOS.png)
+### Demonstração do projeto
+[![Java MySQL Sistema OS](https://img.youtube.com/vi/rB66EC0VXTA/0.jpg)](https://youtu.be/rB66EC0VXTA?si=9q50jPzixgxcaGBc "Asssistir no YouTube")
+
+![YouTube Video Views](https://img.shields.io/youtube/views/rB66EC0VXTA?si=9q50jPzixgxcaGBc?style=social)
 ## Autor
 Professor José de Assis
 ## Instruções para instalação e uso do aplicativo
