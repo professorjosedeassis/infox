@@ -74,7 +74,7 @@ Tecnologias que são abordadas neste tutorial:
 ### Ferramentas
 [openJDK 8 (LTS)](https://adoptopenjdk.net/)
 
-[NetBeans IDE 8.2](https://netbeans-ide.informer.com/8.2/)
+[NetBeans IDE 8.2](https://filehippo.com/download_netbeans/8.2/)
 
 [iReport-5.6.0](https://sourceforge.net/projects/ireport/)
 
